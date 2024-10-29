@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias entre Datas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p>CalTemp</p> 
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <h1>Calculadora de Dias entre Datas</h1>
+    <div id="calculadoraentredatas">
+        <label for="start-date">Data Inicial:</label>
+        <i><p id="start-error" style="color: #ff5454; display: none;">Por favor, preencha esta data:</p></i>
+        <input type="date" id="start-date" placeholder="dd / mm / aaaa">
+        
+        
+        <label for="end-date">Data Final:</label>
+        <i><p id="end-error" style="color: #ff5454; display: none;">Por favor, preencha esta data:</p></i>
+        <input type="date" id="end-date" placeholder="dd / mm / aaaa">
+        
+        
+        <label for="business-days" class="checkbox-label">
+            <input type="checkbox" id="business-days"> Contar apenas dias úteis    
+        </label>
+        
+        <button onclick="calculateDays()">Calcular</button>
+        <p id="result"></p>
+    </div>
+    <div class="conteudo">
+        <h2>O que é a Calculadora de Dias Entre Datas?</h2>
+        <p>Nossa calculadora de dias permite calcular com precisão o número de dias entre duas datas. Essa ferramenta é ideal para quem precisa de uma contagem exata de dias para planejar eventos, organizar datas comemorativas ou calcular intervalos de tempo importantes.</p>
+        <h2>Como Usar?</h2>
+        <p>Para utilizar, basta inserir a data inicial e a data final. Com um simples clique em "Calcular", você obtém o número exato de dias que separa essas duas datas, sem complicações. </p>
+        <p>Se você precisa saber apenas a quantidade de dias úteis entre duas datas, basta marcar a opção "Contar apenas dias úteis".</p>
+        <h2>Por que utilizar a calculadora?</h2>
+        <p>A calculadora elimina o trabalho manual de contagem de dias entre datas, evitando confusões com anos bissextos e a variação dos dias nos meses. Com ela, você pode calcular facilmente:</p>
+        <ul>
+            <li>Datas de eventos e reuniões.</li>
+            <li>Períodos de férias ou feriados.</li>
+            <li>Aniversários, idades e outras datas comemorativas.</li>
+        </ul>
+        <p>Nossa calculadora de dias simplifica seus cálculos de datas, economizando tempo e garantindo precisão.</p>
+    </div>
+    <footer>
+        <div>
+            <a href="">Dias entre Data</a>
+            <a href="">Somar/Subtrair Dias</a>
+            <a href="">Cronometro</a>
+            <a href="">Temporizador</a>
+            <a href="">Meses entre datas</a>
+            <a href="">Somar/Subtrair Meses</a>
+        </div>
+        <div>
+            <a href="">Política de Privacidade</a>
+            <a href="">Sobre</a>
+            <a href="">Termos de Serviço</a>
+            <a href="">Contato</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
